@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>khaz' website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>khaz’ website (offline)</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <style>
+    :root {
+        --bg-main: #000900;
+        --mainffamily: "Courier New", monospace;
+    }
     html {
         margin: 0;
         padding: 0;
         width: 100vw;
         height: 100vh;
-        background-color: black;
+        background-color: var(--bg-main);
     }
     body {
         margin: 0;
@@ -21,7 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: var(--bg-main);
         height: 100%;
         /* width: 95%; height: 100%; */
 
@@ -49,13 +52,13 @@
     }
 
     #main-title {
-        font-family: monospace;
+        font-family: var(--mainffamily);
         font-size: 4em;
         text-align: center;
     }
 
     #sub-title {
-        font-family: sans-serif;
+        font-family: "Helvetica", "Arial", sans-serif;
         text-align: center;
     }
 
@@ -68,14 +71,17 @@
     }
     </style>
   </head>
+
   <body>
+
     <!-- <script src="index.js"></script> -->
     <div class="main">
         <div class="container">
-            <h1 id="main-title">khaz website</h1>
-            <h2 class="sub-title">🚀 Launching in 5... 4... 3...</h2>
+            <h1 id="main-title">khaz’ website</h1>
+            <h2 id="sub-title">🚀 Launching in 5... 4... 3...</h2>
         </div>
         <img src="img/ktcf_wht.png" id="khpng">
     </div>
+
   </body>
 </html>
